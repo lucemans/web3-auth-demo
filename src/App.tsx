@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import { ConnectButton } from './ConnectButton';
 
 const GlobalStyle = createGlobalStyle`
     html, body {
@@ -17,9 +18,10 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Wrapper = styled.div`
-    background: #2d2e2f;
+    background: #121212;
     color: white;
     height: 100vh;
+    padding: 1rem;
 `;
 
 export const App = () => {
@@ -27,9 +29,7 @@ export const App = () => {
     return (
         <Wrapper>
             <GlobalStyle />
-            <div>
-                Hello World
-            </div>
+            <ConnectButton />
         </Wrapper>
     )
 };
