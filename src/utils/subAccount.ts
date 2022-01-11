@@ -1,0 +1,1 @@
+export const subAccount = (account: string) => `${account.substring(0,6)}...${account.substring(35)}`;
